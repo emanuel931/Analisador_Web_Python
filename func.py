@@ -4,9 +4,12 @@ from selenium.webdriver.chrome.options import Options
 import smtplib
 import email.message
 
-
-def Pegar_Info(navegador, link, onde, param1, param2):
+def Abrir_Site(navegador, link):
     navegador.get(f'{link}') #Abri o Site
+    
+    
+
+def Pegar_Info(navegador, onde, param1, param2):
     site = bf(navegador.page_source, 'html.parser') #Abri o HTML
     info = site.find(f'{onde}', attrs={f'{param1}': f'{param2}'}) #Preucura a Informação
     return info
