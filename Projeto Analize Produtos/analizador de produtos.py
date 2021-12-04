@@ -68,7 +68,7 @@ if preçoAmericanas < p:
     pn = 'Americanas'
     pl = 'https://www.americanas.com.br/produto/111949251?chave=acproduct'
 
-ee(f'Menor Preço, {pn}:', 'baitisatae@gmail.com', 'batistaemanuel324@gmail.com', '88900912',m2=f'Preço: {p :.2f}',m3=f'Link = {pl}',ass='Preço do Livro Poder do Hábito')
+ee(f'Menor Preço, {pn}:', '', '', '',m2=f'Preço: {p :.2f}',m3=f'Link = {pl}',ass='Preço do Livro Poder do Hábito')
 
 preços = {'Site de Vendas':['Amazon', 'Casas Bahia', 'Americanas'],
 'Preços': [preçoAmazon, preçoBahia, preçoAmericanas]
