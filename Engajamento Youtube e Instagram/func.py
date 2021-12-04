@@ -9,8 +9,7 @@ def Pegar_Info(navegador, link, onde, param1, param2):
     navegador.get(f'{link}') #Abri o Site
     site = bf(navegador.page_source, 'html.parser') #Abri o HTML
     info = site.find(f'{onde}', attrs={f'{param1}': f'{param2}'}) #Preucura a Informação
-    info = info.text # Converte Para String
-    return info # Retorna a Informação
+    return info
 
 
 def ee(m1,entregador, recebedor, senha,m2='', m3='', m4='', m5='',ass='Email Automático'):
